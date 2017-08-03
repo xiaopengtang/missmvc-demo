@@ -1,0 +1,14 @@
+{
+	"restful" : {
+		"/api"  :  {
+			"middleware" : ["ApiMiddleware"]
+			,"namespace" : "Home"
+			,"_" : {
+				"/info" : {"ctrl":"Index/IndexController@index"}
+			}
+		}
+	}
+	,"pages"  : {
+		"/"   :  "Home/Index/index"
+	}
+}
