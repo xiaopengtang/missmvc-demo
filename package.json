@@ -7,9 +7,9 @@
     "test": "node bin/www",
     "test:nodemon": "nodemon bin/www",
     "build": "babel src/ --out-dir application/",
-    "start" : "pm2 start bin/www  --watch -i max",
-    "restart" : "pm2 restart bin/www",
-    "stop" : "pm2 stop bin/www"
+    "start": "pm2 start bin/www  -f",
+    "restart": "pm2 restart bin/www",
+    "stop": "pm2 stop bin/www"
   },
   "author": "txp",
   "license": "ISC",
@@ -19,9 +19,20 @@
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.20.0",
+    "babel-loader": "^7.1.1",
     "babel-plugin-transform-runtime": "^6.15.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-stage-1": "^6.16.0",
-    "missmvc": "^1.0.2"
+    "missmvc": "^1.0.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.2",
+    "sass-loader": "^6.0.6",
+    "stylus-loader": "^3.0.1",
+    "vue": "^2.4.2",
+    "vue-loader": "^13.0.2",
+    "vue-server-renderer": "^2.4.2",
+    "webpack": "^3.4.1"
   }
 }

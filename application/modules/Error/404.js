@@ -28,17 +28,10 @@ var _inherits2 = require("babel-runtime/helpers/inherits");
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _react = require("react");
-
-var _react2 = _interopRequireDefault(_react);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import {createStore} from "redux"
-var Base = miss.import("modules/Home/base");
-
-var Index = function (_Base) {
-	(0, _inherits3.default)(Index, _Base);
+var Index = function (_miss$base$controller) {
+	(0, _inherits3.default)(Index, _miss$base$controller);
 
 	function Index() {
 		var _ref;
@@ -51,12 +44,12 @@ var Index = function (_Base) {
 			args[_key] = arguments[_key];
 		}
 
-		return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = Index.__proto__ || (0, _getPrototypeOf2.default)(Index)).call.apply(_ref, [this].concat(args))), _this), _this.render = _regenerator2.default.mark(function _callee() {
+		return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = Index.__proto__ || (0, _getPrototypeOf2.default)(Index)).call.apply(_ref, [this].concat(args))), _this), _this.$method = ["GET"], _this.render = _regenerator2.default.mark(function _callee() {
 			return _regenerator2.default.wrap(function _callee$(_context) {
 				while (1) {
 					switch (_context.prev = _context.next) {
 						case 0:
-							return _context.abrupt("return", "<div>hello world</div>");
+							return _context.abrupt("return", "");
 
 						case 1:
 						case "end":
@@ -68,21 +61,15 @@ var Index = function (_Base) {
 	}
 
 	(0, _createClass3.default)(Index, [{
-		key: "created",
+		key: "$rootTemplate",
+		value: function $rootTemplate(data) {
+			var $error = data.$error;
 
-		//控制器实例被创建
-		value: function created() {}
-		//模板被渲染之前
-
-	}, {
-		key: "beforeMount",
-		value: function beforeMount(params) {}
-		//模板渲染结束
-		// mounted(html){}
-		//渲染函数
-
+			this.$response.status($error.status);
+			return "\n\t\t<html>\n\t\t    <head>\n\t\t        <meta charset=\"utf-8\"/>\n\t\t        <title>" + $error.status + "</title>\n\t\t    </head>\n\t\t    <body>\n\t\t        <h2>" + $error.message + "</h2>\n\t\t        <p>" + $error.stack + "</p>\n\t\t    </body>\n\t\t</html>\n\t\t";
+		}
 	}]);
 	return Index;
-}(Base);
+}(miss.base.controller);
 
 exports.default = Index;

@@ -1,16 +1,16 @@
 import React from "react"
 // import {createStore} from "redux"
 const Base = miss.import("modules/Home/base")
-// const {Tpl,store} = miss.import("Home/Index/index/index.js","react")
 
 class Index extends Base{
-	$method = ["POST","GET"] 
-	// $store  = createStore(store)
+	//控制器实例被创建
 	created(){}
-	mounted(){}
-	updated(){}
+	//模板被渲染之前
+	beforeMount(params){}
+	//模板渲染结束
+	// mounted(html){}
+	//渲染函数
 	render  = function* (){
-		// const data = yield this.$server.getHomeData()
 		return `<div>hello world</div>`
 	}
 }

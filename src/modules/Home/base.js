@@ -4,7 +4,7 @@ class Index extends miss.base.controller {
 	$engine = "react" //指定渲染引擎
 	// $server = {}
 	// $middleware = ["HomeMiddleware"] // 中间件
-	$rootTemplateUrl = "Home/index.html" // 根目录
+	$rootTemplateUrl = "Home/index.html" // 渲染的主页面
 	constructor(){
 		super()
 		const Base = ""

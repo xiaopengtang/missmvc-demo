@@ -25,7 +25,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Index = function (_miss$base$controller) {
 	(0, _inherits3.default)(Index, _miss$base$controller);
 
-	// 根目录
+	// 渲染的主页面
 	//默认访问方式
 	function Index() {
 		(0, _classCallCheck3.default)(this, Index);
