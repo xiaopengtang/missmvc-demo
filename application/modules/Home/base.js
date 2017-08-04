@@ -32,7 +32,7 @@ var Index = function (_miss$base$controller) {
 
 		var _this = (0, _possibleConstructorReturn3.default)(this, (Index.__proto__ || (0, _getPrototypeOf2.default)(Index)).call(this));
 
-		_this.$mothod = "GET";
+		_this.$method = ["ALL"];
 		_this.$engine = "react";
 		_this.$rootTemplateUrl = "Home/index.html";
 
