@@ -16,6 +16,10 @@
   "dependencies": {
     "express": "~4.13.4"
   },
+  "engines": {
+    "node": ">=7.0",
+    "npm": ">=4.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.20.0",
